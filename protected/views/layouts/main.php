@@ -20,7 +20,7 @@
 	<meta property="og:title" content="&#8635; <?=htmlspecialchars($this->title)?> :: youtube9loop"/>
 	<meta property="og:site_name" content="YOUTUBE9LOOP"/>
 	<meta property="og:type" content="website"/>
-	<meta property="fb:app_id" content="761376527223987"/>
+	<meta property="fb:app_id" content="***your-fb-app-id***"/>
 	<meta property="og:url" content="<?=Yii::app()->getBaseUrl(true).Yii::app()->request->getUrl()?>"/>
 	<meta property="og:description" content="The song list contains <?=$this->numOfSong?> song<?=($this->numOfSong>1)?"s":""?> :: loop your fav youtube music"/>
 
@@ -70,7 +70,7 @@
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	
-	  ga('create', 'UA-47079201-1', 'youtube9loop.com');
+	  ga('create', '***google-analytics-id***', 'youtube9loop.com');
 	  ga('send', 'pageview');
 	
 	</script>
@@ -87,7 +87,7 @@
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=761376527223987";
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=***your-fb-app-id***";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
  
