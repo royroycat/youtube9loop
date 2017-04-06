@@ -5,7 +5,7 @@
  */
 (function($){
 	
-	var youtubeApiKey = 'AIzaSyDBvCnEhyXWHSePt9dIRO62WCd7qY1l-EQ';
+	var youtubeApiKey = '***youtube-api-key***';
 	window.CustomPlayer = window.CustomPlayer || {};
 	var eventPrefix = "customplayer";
 	var eventStateChange = "statechange";
