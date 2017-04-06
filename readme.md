@@ -2,12 +2,20 @@
 It is a very old project. The running site is [http://www.youtube9loop.com](http://www.youtube9loop.com). It is using Yii 1. And due to the history, the Yii source code is also included in the repo.
 
 ## Install
- 
+ 1. [mysql] Run `youtube9loop.sql` for the DB schema
+ 2. [php] check out this project and put it in your fav place. In this project, I put in `/usr/share/nginx/$host_path`
+ 3. [nginx] setting up the nginx config, a sample is at below. It is using host `www.youtube9loop.com` as example
+ 4. [yii config] go to `/protected/config/main.php` fill back `***my-sql-username***`, `***my-sql-password***`, `***youtube-api-key***`
+ 5. for `youtube-api-key`, you can obtain it by Google
+ 6. for `***only-your-ip***`, gii is GUI of yii, but the admin GUI you may want to access by your machine only, so setting your local machine IP may better
+ 6. [optional] go to `protected/config/params.php`, `***your-email-address***@gmail.com` is your email address obviously. `default_youtube_id` is the song will be play when user have not put any youtubeid be GET parameter
+ 7. Access your youtube9loop site now!
 
-## nignx setting
+## nginx setting
 
 ```
 server {
+	# redirect all non-www access to www.youtube9loop.com
     listen 80;
     listen 443 ssl;
     server_name  youtube9loop.com *.youtube9loop.com;
