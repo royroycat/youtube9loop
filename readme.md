@@ -12,6 +12,29 @@ It is a very old project. The running site is [http://www.youtube9loop.com](http
  6. [optional] go to `protected/config/params.php`, `***your-email-address***@gmail.com` is your email address obviously. `default_youtube_id` is the song will be play when user have not put any youtubeid be GET parameter
  7. Access your youtube9loop site now!
 
+## If you are using php7
+When running the site, it will show an error in ExtendedController line 3
+Please modified the ExtendedController in /protected/components as: where the $action is missing
+
+```
+<?php
+
+class ExtendedController extends CController
+{
+	
+	public function beforeAction($action)
+	{
+		return true;
+	}
+	
+	public function afterAction($action)
+	{
+		return true;
+	}
+}
+```
+
+
 ## nginx setting
 
 ```
