@@ -10,7 +10,8 @@ It is a very old project. The running site is [http://www.youtube9loop.com](http
  6. for `***only-your-ip***`, gii is GUI of yii, but the admin GUI you may want to access by your machine only, so setting your local machine IP may better
  7. [js hardcode] js/customPlayer.js, there also one `youtube-api-key` you need to fill in
  6. [optional] go to `protected/config/params.php`, `***your-email-address***@gmail.com` is your email address obviously. `default_youtube_id` is the song will be play when user have not put any youtubeid be GET parameter
- 7. Access your youtube9loop site now!
+ 7. using php composer to install the dependency package
+ 8. Access your youtube9loop site now!
 
 ## If you are using php7
 When running the site, it will show an error in ExtendedController line 3
