@@ -10,7 +10,7 @@ It is a very old project. The running site is [http://www.youtube9loop.com](http
  6. for `***only-your-ip***`, gii is GUI of yii, but the admin GUI you may want to access by your machine only, so setting your local machine IP may better
  7. [js hardcode] js/customPlayer.js, there also one `youtube-api-key` you need to fill in
  8. [optional] go to `protected/config/params.php`, `***your-email-address***@gmail.com` is your email address obviously. `default_youtube_id` is the song will be play when user have not put any youtubeid be GET parameter
- 9. you will need bcmath package, for 7.0: sudo apt-get install php7.0-bcmath
+ 9. you will need bcmath package, for 7.0: `sudo apt-get install php7.0-bcmath`
  10. Access your youtube9loop site now!
  11. (Although we use composer. but the vendor package are already downloaded for you. You may update composer.json for your own risk)
 
